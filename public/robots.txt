@@ -1,0 +1,6 @@
+# Permitir todos os crawlers
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://weedmedbr.com/sitemap.xml
