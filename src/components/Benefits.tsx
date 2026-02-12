@@ -132,7 +132,7 @@ function Benefits() {
                   {benefit.description}
                 </p>
                 <a
-                  href="https://weedmedcare.lovable.app/"
+                  href="https://weedmedcare.lovable.app/comecar"
                   onClick={(e) => {
                     e.stopPropagation()
                   }}
