@@ -131,23 +131,19 @@ function Benefits() {
                 <p className="text-white/90 text-sm text-left leading-relaxed mb-3">
                   {benefit.description}
                 </p>
-                <button
+                <a
+                  href="https://weedmedcare.lovable.app/"
                   onClick={(e) => {
                     e.stopPropagation()
-                    // Open Leadster chat
-                    const neurolead = (window as unknown as { neurolead?: { open: () => void } }).neurolead
-                    if (neurolead) {
-                      neurolead.open()
-                    }
                   }}
-                  className="open-chat px-4 py-2 text-sm font-semibold text-white rounded-full shadow-md hover:shadow-lg transition-all duration-300"
+                  className="px-4 py-2 text-sm font-semibold text-white rounded-full shadow-md hover:shadow-lg transition-all duration-300"
                   style={{
                     background: 'linear-gradient(135deg, #4ade80 0%, #22c55e 50%, #16a34a 100%)',
                     boxShadow: '0 4px 15px rgba(34, 197, 94, 0.4)',
                   }}
                 >
                   Começar agora
-                </button>
+                </a>
               </div>
             </motion.div>
           )
