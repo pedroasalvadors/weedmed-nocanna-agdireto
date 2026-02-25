@@ -124,6 +124,10 @@ function Doctors() {
                 background: 'linear-gradient(135deg, #523AC5 0%, #7c5ce7 100%)',
                 boxShadow: '0 10px 30px rgba(82, 58, 197, 0.3)',
               }}
+              onClick={() => {
+                (window as any).dataLayer = (window as any).dataLayer || [];
+                (window as any).dataLayer.push({ event: 'cta_click', cta_location: 'doctors' });
+              }}
               onMouseEnter={(e) => {
                 e.currentTarget.style.background = 'linear-gradient(135deg, #3d2a8f 0%, #523AC5 100%)';
               }}
@@ -131,7 +135,7 @@ function Doctors() {
                 e.currentTarget.style.background = 'linear-gradient(135deg, #523AC5 0%, #7c5ce7 100%)';
               }}
             >
-              Comece agora
+              Iniciar tratamento
               <svg
                 className="w-5 h-5"
                 fill="none"

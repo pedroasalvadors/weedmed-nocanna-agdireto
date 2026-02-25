@@ -90,7 +90,7 @@ function Hero() {
               e.currentTarget.style.background = 'linear-gradient(135deg, #4ade80 0%, #22c55e 50%, #16a34a 100%)';
             }}
           >
-            Começar agora
+            Iniciar tratamento
           </motion.a>
         </div>
       </div>

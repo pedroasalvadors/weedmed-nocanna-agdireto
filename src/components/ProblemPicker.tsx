@@ -122,6 +122,10 @@ function ProblemPicker() {
               variants={itemVariants}
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.98 }}
+              onClick={() => {
+                (window as any).dataLayer = (window as any).dataLayer || [];
+                (window as any).dataLayer.push({ event: 'cta_click', cta_location: 'problem_picker', cta_label: problem.label });
+              }}
             >
               {/* Product Image */}
               <div className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 transition-transform duration-300 group-hover:scale-110">

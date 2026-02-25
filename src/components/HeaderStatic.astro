@@ -9,9 +9,9 @@ const { currentPath = '/' } = Astro.props
 <header class="w-full">
   <!-- Promotional Banner -->
   <div class="py-2 text-center" style="background-color: #65DFA8;">
-    <button class="open-chat text-sm font-medium text-gray-900 underline hover:no-underline">
-      Inicie seu tratamento em menos de 1 semana com preço acessível →
-    </button>
+    <a href="https://weedmedcare.lovable.app/comecar" data-cta="banner" class="text-sm font-medium text-gray-900 underline hover:no-underline">
+      Sua consulta em poucos minutos por R$ 50,00 →
+    </a>
   </div>
 
   <!-- Navigation Bar -->
@@ -54,11 +54,13 @@ const { currentPath = '/' } = Astro.props
 
         <!-- Right Side Actions -->
         <div class="flex items-center">
-          <button
-            class="open-chat hidden lg:inline-flex relative items-center justify-center px-8 py-3 text-base font-semibold text-white rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 ease-out header-cta"
+          <a
+            href="https://weedmedcare.lovable.app/comecar"
+            data-cta="header_desktop"
+            class="hidden lg:inline-flex relative items-center justify-center px-8 py-3 text-base font-semibold text-white rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 ease-out header-cta"
           >
-            Começar agora
-          </button>
+            Iniciar tratamento
+          </a>
 
           <!-- Mobile Menu Button -->
           <button
@@ -86,9 +88,9 @@ const { currentPath = '/' } = Astro.props
         <a href="/#depoimentos" class="text-base font-medium text-gray-700 hover:text-[#523AC5] transition-colors text-left">
           Depoimentos
         </a>
-        <button class="open-chat relative inline-flex items-center justify-center px-8 py-3 text-base font-semibold text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 ease-out header-cta">
-          Começar agora
-        </button>
+        <a href="https://weedmedcare.lovable.app/comecar" data-cta="header_mobile" class="relative inline-flex items-center justify-center px-8 py-3 text-base font-semibold text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 ease-out header-cta">
+          Iniciar tratamento
+        </a>
       </div>
     </div>
   </nav>
@@ -122,6 +124,14 @@ const { currentPath = '/' } = Astro.props
       });
     });
   }
+
+  // GTM cta_click tracking
+  document.querySelectorAll('a[data-cta]').forEach(el => {
+    el.addEventListener('click', () => {
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({ event: 'cta_click', cta_location: el.getAttribute('data-cta') });
+    });
+  });
 
   // Smooth scroll for anchor links
   document.querySelectorAll('a[href^="/#"]').forEach(anchor => {
