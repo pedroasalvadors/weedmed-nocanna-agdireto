@@ -55,14 +55,23 @@
         Medicina natural com avaliação médica e suporte humano em todas as etapas
       </p>
 
-      <!-- CTA Button -->
-      <a
-        href="https://weedmedcare.lovable.app/comecar"
-        data-cta="hero"
-        class="inline-flex items-center justify-center px-8 py-4 md:px-10 md:py-5 text-lg md:text-xl font-semibold text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 ease-out hover:scale-105 hero-cta"
-      >
-        Iniciar tratamento
-      </a>
+      <!-- CTA Buttons -->
+      <div class="flex flex-col sm:flex-row gap-4 hero-cta-group">
+        <a
+          href="https://weedmedcare.lovable.app/comecar"
+          data-cta="hero"
+          class="inline-flex items-center justify-center px-8 py-4 md:px-10 md:py-5 text-lg md:text-xl font-semibold text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 ease-out hover:scale-105 hero-cta"
+        >
+          Iniciar tratamento
+        </a>
+        <a
+          href="https://weedmedcare.lovable.app/cadastro?redirect=/paciente/upload-receita"
+          data-cta="hero-receita"
+          class="inline-flex items-center justify-center px-8 py-4 md:px-10 md:py-5 text-lg md:text-xl font-semibold rounded-full transition-all duration-300 ease-out hover:scale-105 hero-cta-secondary"
+        >
+          Já tenho receita
+        </a>
+      </div>
     </div>
   </div>
 </section>
@@ -79,6 +88,17 @@
 
   .hero-cta:hover {
     background: linear-gradient(135deg, #16a34a 0%, #15803d 50%, #166534 100%);
+  }
+
+  .hero-cta-secondary {
+    background: transparent;
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+  }
+
+  .hero-cta-secondary:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: white;
   }
 
   /* Animações suaves após o carregamento - não bloqueiam LCP */
@@ -99,7 +119,7 @@
       animation: fadeInUp 0.7s ease-out 0.2s both;
     }
 
-    .hero-cta {
+    .hero-cta-group {
       animation: fadeInUp 0.7s ease-out 0.25s both;
     }
   }
