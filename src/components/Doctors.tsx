@@ -2,7 +2,7 @@ const doctors = [
   {
     id: 1,
     name: 'Dr. Luís Augusto Rocha',
-    role: 'Especialista em tratamentos com canabidiol',
+    role: 'Especialista em medicina natural',
     crm: 'CRM 35309-SC',
     experience: '+500 atendimentos online',
     focus: 'Experiência em ansiedade e insônia',
@@ -13,7 +13,7 @@ const doctors = [
   {
     id: 2,
     name: 'Dr. Rafael Brogiollo',
-    role: 'Especialista em tratamentos com canabidiol',
+    role: 'Especialista em medicina natural',
     crm: 'CRM 41673-RS',
     experience: '+1.200 atendimentos online',
     focus: 'Foco em ansiedade, insônia e estresse',
@@ -24,7 +24,7 @@ const doctors = [
   {
     id: 3,
     name: 'Dra. Giullia Guedes',
-    role: 'Especialista em tratamentos com canabidiol',
+    role: 'Especialista em medicina natural',
     crm: 'CRM 34723-PE',
     experience: '+800 atendimentos online',
     focus: 'Foco em saúde emocional feminina',
@@ -44,8 +44,8 @@ const features = [
     description: 'Tratamentos comprovados e atualizados',
   },
   {
-    title: 'Especialistas em CBD',
-    description: 'Foco total em medicina canabinóide',
+    title: 'Especialistas em Medicina Natural',
+    description: 'Foco total em medicina natural',
   },
 ]
 
@@ -81,13 +81,13 @@ function Doctors() {
               className="text-3xl md:text-4xl lg:text-5xl text-gray-800 mb-6 font-bold"
               style={{ fontFamily: 'Inter, sans-serif' }}
             >
-              Experiência em tratamentos com canabidiol
+              Experiência em medicina natural
             </h2>
             <div className="w-24 h-1 mb-6" style={{ backgroundColor: '#65DFA8' }} />
 
             {/* Description */}
             <p className="text-gray-600 text-lg mb-8 leading-relaxed">
-              Profissionais certificados e experientes em tratamentos com CBD. Atendimento online, seguro e personalizado para o seu caso.
+              Profissionais certificados e experientes em medicina natural. Atendimento online, seguro e personalizado para o seu caso.
             </p>
 
             {/* Features List */}

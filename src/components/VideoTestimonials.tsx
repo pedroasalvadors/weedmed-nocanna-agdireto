@@ -3,20 +3,20 @@ import { useState, useRef, useEffect } from 'react'
 import { motion } from 'framer-motion'
 
 const videos = [
-    { id: 'Xyc06qDqZMc', thumbnail: '/testimonial5.webp', specialist: 'Márcia superou enxaquecas severas e recuperou sua alegria e rotina profissional com o CBD.' },
+    { id: 'Xyc06qDqZMc', thumbnail: '/testimonial5.webp', specialist: 'Márcia superou enxaquecas severas e recuperou sua alegria e rotina profissional com o tratamento.' },
 
   { id: 'aTpYN2_N4-E', thumbnail: '/testimonial8.webp', specialist: 'Sandro zerou as crises de convulsão e melhorou a qualidade do sono com o tratamento.' },
   { id: 'ey90bGRljDw', thumbnail: '/testimonial9.webp', specialist: 'Paciente supera depressão e síndrome do pânico com suporte total na importação do tratamento.' },
-  { id: 'w7_VFg6unaA', thumbnail: '/testimonial6.webp', specialist: 'Paciente detalha o suporte humanizado e os primeiros resultados de sua jornada com o CBD.' },
-  { id: 'pU1x4a4r6KY', thumbnail: '/testimonial7.webp', specialist: 'Mãe conta como o CBD trouxe tranquilidade e bons resultados para o TDH e TOD da filha.' },
-    { id: 'A1WLqWf4I0o', thumbnail: '/testimonial3.webp', specialist: 'Airo: jornada com canabidiol e a importância do suporte humanizado.' },
-          { id: 'J1b9w2OkTpM', thumbnail: '/testimonial1.webp', specialist: 'Jorge, 66 anos: sono restaurado e mais energia com CBD.' },
+  { id: 'w7_VFg6unaA', thumbnail: '/testimonial6.webp', specialist: 'Paciente detalha o suporte humanizado e os primeiros resultados de sua jornada com o tratamento.' },
+  { id: 'pU1x4a4r6KY', thumbnail: '/testimonial7.webp', specialist: 'Mãe conta como o tratamento trouxe tranquilidade e bons resultados para o TDH e TOD da filha.' },
+    { id: 'A1WLqWf4I0o', thumbnail: '/testimonial3.webp', specialist: 'Airo: jornada com medicina natural e a importância do suporte humanizado.' },
+          { id: 'J1b9w2OkTpM', thumbnail: '/testimonial1.webp', specialist: 'Jorge, 66 anos: sono restaurado e mais energia com o tratamento.' },
 
     { id: 'tyZ3dicgDa4', thumbnail: '/testimonial4.webp', specialist: 'Paciente eliminou dores articulares e encontrou equilíbrio na perimenopausa.' },
-      { id: 'qF07_9FWHjY', thumbnail: '/testimonial13.webp', specialist: 'Filha relata como o CBD devolveu mobilidade e calma para a mãe com Parkinson e demência.' },
+      { id: 'qF07_9FWHjY', thumbnail: '/testimonial13.webp', specialist: 'Filha relata como o tratamento devolveu mobilidade e calma para a mãe com Parkinson e demência.' },
 
   { id: 'PtcEGQ0DYXk', thumbnail: '/testimonial10.webp', specialist: 'Mãe destaca rapidez e facilidade no processo para tratar a fibromialgia da filha.' },
-  { id: 'sbHSluY05vA', thumbnail: '/testimonial11.webp', specialist: 'De bengala à redução de 80% das dores: o impacto do CBD na fibromialgia e problemas de coluna.' },
+  { id: 'sbHSluY05vA', thumbnail: '/testimonial11.webp', specialist: 'De bengala à redução de 80% das dores: o impacto do tratamento na fibromialgia e problemas de coluna.' },
   { id: 'sbHSluY05vA', thumbnail: '/testimonial12.webp', specialist: 'Experiência positiva em família: Joana relata segurança e agilidade na entrega do medicamento.' },
 ]
 

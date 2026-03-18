@@ -7,7 +7,7 @@ interface FAQItem {
 
 const faqs: FAQItem[] = [
   {
-    question: 'CBD é legal no Brasil?',
+    question: 'O tratamento é legal no Brasil?',
     answer:
       'Sim. O uso medicinal é permitido com prescrição médica e autorização da Anvisa.',
   },

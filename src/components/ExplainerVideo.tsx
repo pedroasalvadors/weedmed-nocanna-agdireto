@@ -46,7 +46,7 @@ function ExplainerVideo() {
                 className="text-white text-lg font-semibold leading-snug"
                 style={{ fontFamily: 'Inter, sans-serif' }}
               >
-                O canabidiol alivia dores, reduz ansiedade e melhora o sono de forma natural e segura.
+                O tratamento alivia dores, reduz ansiedade e melhora o sono de forma natural e segura.
               </p>
             </div>
           </motion.div>

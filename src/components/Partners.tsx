@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 
 const partners = [
-  { name: 'CBDMD', logo: '/cbdmd.webp' },
+  { name: 'Abrace', logo: '/cbdmd.webp' },
   { name: 'Harbor Hemp', logo: '/harborhemp.webp' },
   { name: 'Canna River', logo: '/cannariver.webp' },
   { name: 'Alma Labs', logo: '/almalabs.webp' },

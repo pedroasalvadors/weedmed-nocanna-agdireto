@@ -260,7 +260,7 @@ function TestimonialCarousel() {
             >
               <p className="text-sm text-gray-500 mb-3">Ouça nossos pacientes:</p>
               <blockquote className="text-lg text-gray-800 leading-relaxed mb-4">
-                Superei enxaquecas fortes e recuperei minha alegria com o CBD."
+                Superei enxaquecas fortes e recuperei minha alegria com o tratamento."
               </blockquote>
               <div className="flex items-center gap-2">
                 <span className="font-medium text-gray-900">Márcia</span>
@@ -316,7 +316,7 @@ function TestimonialCarousel() {
               >
                 <p className="text-sm text-gray-500 mb-3">Ouça nossos pacientes:</p>
                 <blockquote className="text-lg md:text-xl text-gray-800 leading-relaxed mb-4">
-                  "Márcia superou enxaquecas severas e recuperou sua alegria e rotina profissional com o CBD."
+                  "Márcia superou enxaquecas severas e recuperou sua alegria e rotina profissional com o tratamento."
                 </blockquote>
                 <div className="flex items-center gap-2">
                   <span className="font-medium text-gray-900">Márcia</span>
