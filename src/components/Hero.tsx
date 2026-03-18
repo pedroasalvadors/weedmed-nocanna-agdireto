@@ -12,7 +12,7 @@ function Hero() {
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative">
         {/* Right Image - Behind text on small/medium, beside on large */}
         <motion.div 
-          className="absolute -right-20 md:-right-10 lg:right-8 -bottom-36 md:-bottom-44 lg:-bottom-40 pointer-events-none"
+          className="absolute -right-20 md:-right-10 lg:right-8 -bottom-24 md:-bottom-52 lg:-bottom-48 pointer-events-none"
           initial={{ opacity: 0, x: 100 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
@@ -22,7 +22,7 @@ function Hero() {
             alt="Paciente satisfeita"
             fetchPriority="high"
             decoding="async"
-            className="h-[500px] md:h-[640px] lg:h-[860px] w-auto object-contain object-bottom"
+            className="h-[400px] md:h-[500px] lg:h-[680px] w-auto object-contain object-bottom"
           />
         </motion.div>
 
