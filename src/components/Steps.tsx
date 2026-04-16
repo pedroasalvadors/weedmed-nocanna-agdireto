@@ -153,7 +153,7 @@ export default function Steps() {
               .
             </p>
             <a
-              href="https://weedmed.online/"
+              href="https://weedmed.online/avaliacao"
               className="inline-flex items-center justify-center px-5 py-3 rounded-full text-sm font-semibold text-white transition-opacity hover:opacity-90"
               style={{ backgroundColor: '#00B383', fontFamily: "'Inter', system-ui, sans-serif" }}
               data-cta="steps_consulta"

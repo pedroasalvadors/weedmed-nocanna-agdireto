@@ -36,7 +36,7 @@ const faqs: FAQItem[] = [
   {
     question: 'Preciso avisar meu médico atual antes de começar?',
     answer:
-      'Não é obrigatório, mas é sempre recomendado manter seu médico de família informado sobre todos os tratamentos que você está fazendo. Os médicos parceiros da weedmed emitem a prescrição com base na sua avaliação individualizada.',
+      'Não é obrigatório, mas é sempre recomendado manter seu médico de família informado sobre todos os tratamentos que você está fazendo. Os médicos parceiros da weemed emitem a prescrição com base na sua avaliação individualizada.',
   },
   // ICP 3 — Cláudia (cuidadores)
   {

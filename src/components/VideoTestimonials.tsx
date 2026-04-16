@@ -5,7 +5,6 @@ import { motion } from 'framer-motion'
 const videos = [
     { id: 'Xyc06qDqZMc', thumbnail: '/testimonial5.webp', specialist: 'Márcia superou enxaquecas severas e recuperou sua alegria e rotina profissional com o tratamento.' },
 
-  { id: 'aTpYN2_N4-E', thumbnail: '/testimonial8.webp', specialist: 'Sandro zerou as crises de convulsão e melhorou a qualidade do sono com o tratamento.' },
   { id: 'ey90bGRljDw', thumbnail: '/testimonial9.webp', specialist: 'Paciente supera depressão e síndrome do pânico com suporte total na importação do tratamento.' },
   { id: 'w7_VFg6unaA', thumbnail: '/testimonial6.webp', specialist: 'Paciente detalha o suporte humanizado e os primeiros resultados de sua jornada de tratamento.' },
   { id: 'pU1x4a4r6KY', thumbnail: '/testimonial7.webp', specialist: 'Mãe conta como o tratamento trouxe tranquilidade e bons resultados para o TDH e TOD da filha.' },

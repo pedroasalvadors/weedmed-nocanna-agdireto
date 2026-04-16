@@ -84,7 +84,7 @@ export default function Footer() {
             A WMED SERVIÇOS LTDA, inscrita sob CNPJ 52.387.940/0001-89, atua de acordo com a legislação brasileira e com a norma da Anvisa RDC nº 660/2022. Nenhuma informação aqui deve ser interpretada como garantia de resultados e o uso dos medicamentos deve ser realizado somente mediante consulta médica.
           </p>
           <p className="text-sm text-white/50 mb-2">
-            Copyright © weedmed. Todos os direitos reservados.
+            Copyright © weemed. Todos os direitos reservados.
           </p>
           <div className="flex items-center justify-center gap-4 mb-6">
             <a

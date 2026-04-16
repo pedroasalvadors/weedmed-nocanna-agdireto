@@ -131,7 +131,7 @@ function Benefits() {
                   {benefit.description}
                 </p>
                 <a
-                  href="https://weedmedcare.lovable.app/comecar"
+                  href="https://weedmed.online/avaliacao"
                   onClick={(e) => {
                     e.stopPropagation();
                     (window as any).dataLayer = (window as any).dataLayer || [];

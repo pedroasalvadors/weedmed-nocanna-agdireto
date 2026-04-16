@@ -272,7 +272,7 @@ export default function ProblemPicker() {
 
               {/* CTA */}
               <a
-                href="https://weedmed.online/"
+                href="https://weedmed.online/avaliacao"
                 onClick={() => {
                   (window as any).dataLayer = (window as any).dataLayer || []
                   ;(window as any).dataLayer.push({

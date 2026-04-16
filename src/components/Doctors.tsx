@@ -147,7 +147,7 @@ function Doctors() {
             </div>
 
             <a
-              href="https://weedmed.online/"
+              href="https://weedmed.online/avaliacao"
               onClick={() => {
                 (window as any).dataLayer = (window as any).dataLayer || [];
                 (window as any).dataLayer.push({ event: 'cta_click', cta_location: 'doctors' });

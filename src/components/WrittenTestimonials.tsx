@@ -8,7 +8,7 @@ function WrittenTestimonials() {
     if (!containerRef.current) return
 
     const script = document.createElement('script')
-    script.src = 'https://cdn.trustindex.io/loader.js?fee1b6c6368a302f5546ce204e7'
+    script.src = 'https://cdn.trustindex.io/loader.js?b320120697ad835ee46628a4920'
     script.async = true
     script.defer = true
     containerRef.current.appendChild(script)
