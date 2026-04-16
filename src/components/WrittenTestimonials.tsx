@@ -25,16 +25,16 @@ function WrittenTestimonials() {
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
         {/* Title */}
         <motion.h2
-          className="text-3xl md:text-4xl lg:text-5xl text-left text-gray-900 mb-10 max-w-3xl font-bold"
-          style={{ fontFamily: 'Inter, sans-serif' }}
-          initial={{ opacity: 0, y: 30 }}
+          className="text-3xl md:text-4xl text-left mb-3 font-bold"
+          style={{ fontFamily: "'Plus Jakarta Sans', 'Inter', system-ui, sans-serif", color: '#2D1B69' }}
+          initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.6, delay: 0.2 }}
+          viewport={{ once: true, margin: "-80px" }}
+          transition={{ duration: 0.5 }}
         >
-          Pacientes vivendo vidas mais felizes e saudáveis
+          Pacientes que transformaram sua saúde
         </motion.h2>
-        <div className="w-24 h-1 mb-10" style={{ backgroundColor: '#65DFA8' }} />
+        <div className="w-12 h-1 mb-10" style={{ backgroundColor: '#00B383' }} />
 
         {/* Trustindex Widget Container */}
         <div ref={containerRef} className="trustindex-widget-container" />

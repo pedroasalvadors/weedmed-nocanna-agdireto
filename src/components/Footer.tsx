@@ -2,27 +2,18 @@
 
 export default function Footer() {
   return (
-    <footer className="relative bg-[#523AC5] text-white overflow-hidden pt-16 pb-8">
-      {/* Background Logo - Huge and low opacity */}
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none overflow-hidden">
-         <img 
-            src="/logo-horizontal-branco_1@2x.webp" 
-            alt="" 
-            className="w-[80%] max-w-none opacity-[0.03] transform scale-100" 
-         />
-      </div>
-
-      <div className="relative z-10 container mx-auto px-6 max-w-7xl">
+    <footer className="text-white pt-16 pb-8" style={{ backgroundColor: '#2D1B69' }}>
+      <div className="container mx-auto px-6 max-w-7xl">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 items-center mb-12">
-          
+
           {/* Social Media Section */}
           <div className="flex flex-col items-center md:items-start text-center md:text-left">
             <h3 className="text-xl font-bold mb-6">Siga-nos nas redes</h3>
             <div className="flex space-x-6">
               {/* YouTube */}
-              <a 
-                href="https://www.youtube.com/@weedmed/featured" 
-                target="_blank" 
+              <a
+                href="https://www.youtube.com/@weedmed/featured"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white/10 p-3 rounded-full hover:bg-white/20 hover:scale-110 transition-all duration-300 group"
                 aria-label="YouTube"
@@ -33,9 +24,9 @@ export default function Footer() {
               </a>
 
               {/* Instagram */}
-              <a 
-                href="https://www.instagram.com/weedmed.br/" 
-                target="_blank" 
+              <a
+                href="https://www.instagram.com/weedmed.br/"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white/10 p-3 rounded-full hover:bg-white/20 hover:scale-110 transition-all duration-300 group"
                  aria-label="Instagram"
@@ -46,9 +37,9 @@ export default function Footer() {
               </a>
 
               {/* TikTok */}
-              <a 
-                href="https://www.tiktok.com/@weedmed.br" 
-                target="_blank" 
+              <a
+                href="https://www.tiktok.com/@weedmed.br"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white/10 p-3 rounded-full hover:bg-white/20 hover:scale-110 transition-all duration-300 group"
                  aria-label="TikTok"
@@ -59,12 +50,12 @@ export default function Footer() {
               </a>
             </div>
           </div>
-          
+
            {/* Center Logo text or main nav could go here, but focusing on the trust badges as requested */}
             <div className="flex flex-col items-center justify-center">
-                 {/* Maybe put the Weedmed logo here subtly if needed, but the big one is in background. 
+                 {/* Maybe put the Weedmed logo here subtly if needed, but the big one is in background.
                      For now, I'll spacing or perhaps a short description if needed.
-                     Actually, I'll align the trust badges here or to the right. 
+                     Actually, I'll align the trust badges here or to the right.
                      Let's put trust badges in the center or right.
                  */}
             </div>
@@ -72,14 +63,14 @@ export default function Footer() {
           {/* Trust Badges */}
           <div className="flex flex-col items-center md:items-end space-y-4">
              <div className="flex items-center gap-4 bg-white/5 p-4 rounded-xl backdrop-blur-sm">
-                <img 
-                    src="/reclame-aqui.webp" 
-                    alt="Reclame Aqui" 
+                <img
+                    src="/reclame-aqui.webp"
+                    alt="Reclame Aqui"
                     className="h-16 w-auto object-contain bg-white rounded p-1"
                 />
-                <img 
-                    src="/ssl-site-seguro.webp" 
-                    alt="Site Seguro SSL" 
+                <img
+                    src="/ssl-site-seguro.webp"
+                    alt="Site Seguro SSL"
                     className="h-16 w-auto object-contain"
                 />
              </div>
@@ -93,7 +84,7 @@ export default function Footer() {
             A WMED SERVIÇOS LTDA, inscrita sob CNPJ 52.387.940/0001-89, atua de acordo com a legislação brasileira e com a norma da Anvisa RDC nº 660/2022. Nenhuma informação aqui deve ser interpretada como garantia de resultados e o uso dos medicamentos deve ser realizado somente mediante consulta médica.
           </p>
           <p className="text-sm text-white/50 mb-2">
-            Copyright © weedmed — Todos os direitos reservados
+            Copyright © weedmed. Todos os direitos reservados.
           </p>
           <div className="flex items-center justify-center gap-4 mb-6">
             <a

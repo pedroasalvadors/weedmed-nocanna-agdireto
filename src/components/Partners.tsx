@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 
 const partners = [
-  { name: 'Abrace', logo: '/cbdmd.webp' },
+  { name: 'CBDMD', logo: '/cbdmd.webp' },
   { name: 'Harbor Hemp', logo: '/harborhemp.webp' },
   { name: 'Canna River', logo: '/cannariver.webp' },
   { name: 'Alma Labs', logo: '/almalabs.webp' },
@@ -43,12 +43,12 @@ function Partners() {
           transition={{ duration: 0.6 }}
         >
           <h2
-            className="text-3xl md:text-4xl lg:text-5xl text-gray-800 font-bold"
-            style={{ fontFamily: 'Inter, sans-serif' }}
+            className="text-3xl md:text-4xl font-bold"
+            style={{ fontFamily: "'Plus Jakarta Sans', 'Inter', system-ui, sans-serif", color: '#2D1B69' }}
           >
             Parceiros
           </h2>
-          <div className="w-24 h-1 mt-3" style={{ backgroundColor: '#65DFA8' }} />
+          <div className="w-12 h-1 mt-3" style={{ backgroundColor: '#00B383' }} />
         </motion.div>
 
         {/* Logos Grid */}
@@ -68,9 +68,8 @@ function Partners() {
               <img
                 src={partner.logo}
                 alt={partner.name}
-                loading="lazy"
-                decoding="async"
                 className="h-20 md:h-28 lg:h-32 w-auto object-contain"
+                loading="lazy"
               />
             </motion.div>
           ))}

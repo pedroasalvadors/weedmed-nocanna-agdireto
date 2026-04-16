@@ -1,16 +1,12 @@
 import { useState } from 'react'
 
-interface HeaderProps {
-  currentPath?: string
-}
-
-function Header({ currentPath = '/' }: HeaderProps) {
+function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const scrollToSection = (sectionId: string) => {
-    // If not on home page, navigate to home first
-    if (currentPath !== '/') {
-      window.location.href = '/#' + sectionId
+    // If not on home page, navigate to home with hash
+    if (window.location.pathname !== '/') {
+      window.location.href = `/#${sectionId}`
     } else {
       const element = document.getElementById(sectionId)
       element?.scrollIntoView({ behavior: 'smooth' })

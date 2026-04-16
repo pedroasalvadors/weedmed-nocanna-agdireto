@@ -1,6 +1,6 @@
-# Permitir todos os crawlers
+# Allow all crawlers to access all content
 User-agent: *
 Allow: /
 
-# Sitemap
-Sitemap: https://weedmedbr.com/sitemap.xml
+# Sitemap (optional - add your sitemap URL if you have one)
+# Sitemap: https://seudominio.com/sitemap.xml

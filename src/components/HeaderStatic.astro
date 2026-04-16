@@ -8,24 +8,30 @@ const { currentPath = '/' } = Astro.props
 
 <header class="w-full">
   <!-- Promotional Banner -->
-  <div class="py-2 text-center" style="background-color: #65DFA8;">
-    <a href="https://weedmedcare.lovable.app/comecar" data-cta="banner" class="text-sm font-medium text-gray-900 underline hover:no-underline">
-      Sua consulta em poucos minutos por R$ 50,00 →
+  <div class="py-2 text-center px-4" style="background-color: #00B383;">
+    <a
+      href="https://weedmed.online/"
+      class="text-xs sm:text-sm font-semibold text-white hover:underline"
+      style="font-family: 'Inter', system-ui, sans-serif;"
+      data-cta="banner"
+    >
+      <span class="sm:hidden">Consulta médica online · R$50 →</span>
+      <span class="hidden sm:inline">Consulta médica online a partir de R$50 · Resultado em até 24h →</span>
     </a>
   </div>
 
   <!-- Navigation Bar -->
   <nav class="bg-white border-b border-gray-100">
     <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-      <div class="flex items-center justify-between h-24">
+      <div class="flex items-center justify-between h-20">
         <!-- Logo -->
         <a href="/" class="flex-shrink-0">
           <img
-            src="/logologo.webp"
-            alt="Weedmed"
-            class="h-12 w-auto"
-            width="120"
-            height="48"
+            src="/logo-wm-light.svg"
+            alt="weemed"
+            class="h-8 w-auto"
+            width="180"
+            height="32"
             loading="eager"
           />
         </a>
@@ -34,30 +40,42 @@ const { currentPath = '/' } = Astro.props
         <div class="hidden lg:flex items-center gap-10">
           <a
             href="/#como-funciona"
-            class="text-base font-medium text-gray-700 hover:text-[#523AC5] transition-colors"
+            class="text-sm font-medium text-gray-600 hover:text-[#2D1B69] transition-colors"
+            style="font-family: 'Inter', system-ui, sans-serif;"
           >
             Como funciona
           </a>
           <a
-            href="/#especialistas"
-            class="text-base font-medium text-gray-700 hover:text-[#523AC5] transition-colors"
-          >
-            Especialistas
-          </a>
-          <a
             href="/#depoimentos"
-            class="text-base font-medium text-gray-700 hover:text-[#523AC5] transition-colors"
+            class="text-sm font-medium text-gray-600 hover:text-[#2D1B69] transition-colors"
+            style="font-family: 'Inter', system-ui, sans-serif;"
           >
             Depoimentos
+          </a>
+          <a
+            href="/#precos"
+            class="text-sm font-medium text-gray-600 hover:text-[#2D1B69] transition-colors"
+            style="font-family: 'Inter', system-ui, sans-serif;"
+          >
+            Preços
           </a>
         </div>
 
         <!-- Right Side Actions -->
-        <div class="flex items-center">
+        <div class="flex items-center gap-3">
           <a
-            href="https://weedmedcare.lovable.app/comecar"
+            href="https://weedmed.online/cadastro?redirect=/paciente/upload-receita"
+            class="hidden lg:inline-flex items-center justify-center px-5 py-2.5 text-sm font-medium text-[#2D1B69] border border-[#2D1B69] rounded-full hover:bg-[#EDE9F8] transition-all duration-200"
+            style="font-family: 'Inter', system-ui, sans-serif;"
+            data-cta="header_receita"
+          >
+            Já tenho receita
+          </a>
+          <a
+            href="https://weedmed.online/"
+            class="hidden lg:inline-flex items-center justify-center px-6 py-2.5 text-sm font-semibold text-white rounded-full shadow-md hover:shadow-lg hover:opacity-90 transition-all duration-200 header-cta"
+            style="font-family: 'Inter', system-ui, sans-serif;"
             data-cta="header_desktop"
-            class="hidden lg:inline-flex relative items-center justify-center px-8 py-3 text-base font-semibold text-white rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 ease-out header-cta"
           >
             Iniciar tratamento
           </a>
@@ -68,7 +86,7 @@ const { currentPath = '/' } = Astro.props
             class="lg:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-100 mobile-menu-btn"
             aria-label="Abrir menu"
           >
-            <svg class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
           </button>
@@ -76,21 +94,28 @@ const { currentPath = '/' } = Astro.props
       </div>
     </div>
 
-    <!-- Mobile Menu (hidden by default, toggled via JS) -->
+    <!-- Mobile Menu -->
     <div id="mobile-menu" class="lg:hidden bg-white border-t border-gray-100 shadow-xl hidden">
-      <div class="px-6 py-6 space-y-4 flex flex-col">
-        <a href="/#como-funciona" class="text-base font-medium text-gray-700 hover:text-[#523AC5] transition-colors text-left">
-          Como funciona
-        </a>
-        <a href="/#especialistas" class="text-base font-medium text-gray-700 hover:text-[#523AC5] transition-colors text-left">
-          Especialistas
-        </a>
-        <a href="/#depoimentos" class="text-base font-medium text-gray-700 hover:text-[#523AC5] transition-colors text-left">
-          Depoimentos
-        </a>
-        <a href="https://weedmedcare.lovable.app/comecar" data-cta="header_mobile" class="relative inline-flex items-center justify-center px-8 py-3 text-base font-semibold text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 ease-out header-cta">
-          Iniciar tratamento
-        </a>
+      <div class="px-6 py-5 space-y-3 flex flex-col">
+        <a href="/#como-funciona" class="text-sm font-medium text-gray-600 hover:text-[#2D1B69] transition-colors py-1">Como funciona</a>
+        <a href="/#depoimentos" class="text-sm font-medium text-gray-600 hover:text-[#2D1B69] transition-colors py-1">Depoimentos</a>
+        <a href="/#precos" class="text-sm font-medium text-gray-600 hover:text-[#2D1B69] transition-colors py-1">Preços</a>
+        <div class="pt-2 flex flex-col gap-2">
+          <a
+            href="https://weedmed.online/cadastro?redirect=/paciente/upload-receita"
+            class="inline-flex items-center justify-center px-6 py-3 text-sm font-medium text-[#2D1B69] border border-[#2D1B69] rounded-full transition-all duration-200"
+            data-cta="header_receita_mobile"
+          >
+            Já tenho receita
+          </a>
+          <a
+            href="https://weedmed.online/"
+            class="inline-flex items-center justify-center px-6 py-3 text-sm font-semibold text-white rounded-full shadow-md header-cta"
+            data-cta="header_mobile"
+          >
+            Iniciar tratamento
+          </a>
+        </div>
       </div>
     </div>
   </nav>
@@ -98,17 +123,14 @@ const { currentPath = '/' } = Astro.props
 
 <style>
   .header-cta {
-    background: linear-gradient(135deg, #523AC5 0%, #7c5ce7 100%);
-    box-shadow: 0 10px 30px rgba(82, 58, 197, 0.3);
+    background-color: #2D1B69;
   }
-
   .header-cta:hover {
-    background: linear-gradient(135deg, #3d2a8f 0%, #523AC5 100%);
+    background-color: #1a1040;
   }
 </style>
 
 <script>
-  // Mobile menu toggle - minimal JS for interactivity
   const menuBtn = document.querySelector('.mobile-menu-btn');
   const mobileMenu = document.getElementById('mobile-menu');
 
@@ -116,8 +138,6 @@ const { currentPath = '/' } = Astro.props
     menuBtn.addEventListener('click', () => {
       mobileMenu.classList.toggle('hidden');
     });
-
-    // Close menu when clicking a link
     mobileMenu.querySelectorAll('a, button').forEach(link => {
       link.addEventListener('click', () => {
         mobileMenu.classList.add('hidden');
@@ -125,15 +145,16 @@ const { currentPath = '/' } = Astro.props
     });
   }
 
-  // GTM cta_click tracking
-  document.querySelectorAll('a[data-cta]').forEach(el => {
-    el.addEventListener('click', () => {
+  document.querySelectorAll('a[data-cta]').forEach(link => {
+    link.addEventListener('click', () => {
       window.dataLayer = window.dataLayer || [];
-      window.dataLayer.push({ event: 'cta_click', cta_location: el.getAttribute('data-cta') });
+      window.dataLayer.push({
+        event: 'cta_click',
+        cta_location: link.getAttribute('data-cta'),
+      });
     });
   });
 
-  // Smooth scroll for anchor links
   document.querySelectorAll('a[href^="/#"]').forEach(anchor => {
     anchor.addEventListener('click', (e) => {
       const href = anchor.getAttribute('href');
@@ -141,9 +162,7 @@ const { currentPath = '/' } = Astro.props
         e.preventDefault();
         const targetId = href.replace('/#', '');
         const target = document.getElementById(targetId);
-        if (target) {
-          target.scrollIntoView({ behavior: 'smooth' });
-        }
+        if (target) target.scrollIntoView({ behavior: 'smooth' });
       }
     });
   });

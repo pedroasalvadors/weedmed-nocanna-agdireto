@@ -5,7 +5,7 @@ const benefits = [
   {
     id: 1,
     title: 'Melhora do Humor',
-    description: 'Canabinoides ajudam a regular neurotransmissores, promovendo equilíbrio emocional e bem-estar.',
+    description: 'Regulação natural de neurotransmissores, promovendo equilíbrio emocional e bem-estar.',
     image: '/mood-enhancement.webp',
   },
   {
@@ -110,9 +110,8 @@ function Benefits() {
               <img
                 src={benefit.image}
                 alt={benefit.title}
-                loading="lazy"
-                decoding="async"
                 className={`w-full h-full object-cover transition-transform duration-500 md:group-hover:scale-110 ${isActive ? 'scale-110' : ''}`}
+                loading="lazy"
               />
 
               {/* Gradient Overlay - darker on hover/active */}
@@ -138,7 +137,7 @@ function Benefits() {
                     (window as any).dataLayer = (window as any).dataLayer || [];
                     (window as any).dataLayer.push({ event: 'cta_click', cta_location: 'benefits' });
                   }}
-                  className="px-4 py-2 text-sm font-semibold text-white rounded-full shadow-md hover:shadow-lg transition-all duration-300"
+                  className="px-4 py-2 text-sm font-semibold text-white rounded-full shadow-md hover:shadow-lg transition-all duration-300 inline-block"
                   style={{
                     background: 'linear-gradient(135deg, #4ade80 0%, #22c55e 50%, #16a34a 100%)',
                     boxShadow: '0 4px 15px rgba(34, 197, 94, 0.4)',

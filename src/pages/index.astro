@@ -2,36 +2,54 @@
 import Layout from '../layouts/Layout.astro'
 import HeaderStatic from '../components/HeaderStatic.astro'
 import HeroStatic from '../components/HeroStatic.astro'
-import VideoTestimonials from '../components/VideoTestimonials'
-import Benefits from '../components/Benefits'
-import ProblemPicker from '../components/ProblemPicker'
+import TrustBar from '../components/TrustBar'
 import Steps from '../components/Steps'
-import TestimonialCarousel from '../components/TestimonialCarousel'
+import ProblemPicker from '../components/ProblemPicker'
+import VideoTestimonials from '../components/VideoTestimonials'
+import Pricing from '../components/Pricing'
 import Doctors from '../components/Doctors'
+import ScientificBase from '../components/ScientificBase'
 import WrittenTestimonials from '../components/WrittenTestimonials'
-import ExplainerVideo from '../components/ExplainerVideo'
 import FAQ from '../components/FAQ'
 import Partners from '../components/Partners'
 import Footer from '../components/Footer'
 ---
 
-<Layout title="Weedmed">
-  <div class="min-h-screen bg-gray-50">
-    <!-- Above the fold - Static HTML for fast LCP -->
+<Layout title="weemed | Saúde Integrativa Online">
+  <div class="min-h-screen bg-white">
+    <!-- Above the fold - Static HTML para LCP rápido -->
     <HeaderStatic currentPath="/" />
     <HeroStatic />
+    <TrustBar client:load />
 
-    <!-- Below the fold - Hydrated when visible -->
-    <VideoTestimonials client:visible />
-    <Benefits client:visible />
-    <ProblemPicker client:visible />
+    <!-- Como funciona -->
     <Steps client:visible />
-    <TestimonialCarousel client:visible />
+
+    <!-- Para quem é -->
+    <ProblemPicker client:visible />
+
+    <!-- Depoimentos em vídeo -->
+    <VideoTestimonials client:visible />
+
+    <!-- Preços -->
+    <Pricing client:visible />
+
+    <!-- Especialistas -->
     <Doctors client:visible />
+
+    <!-- Base científica -->
+    <ScientificBase client:visible />
+
+    <!-- Depoimentos escritos -->
     <WrittenTestimonials client:visible />
-    <ExplainerVideo client:visible />
+
+    <!-- FAQ -->
     <FAQ client:visible />
+
+    <!-- Parceiros -->
     <Partners client:visible />
+
+    <!-- Footer -->
     <Footer />
   </div>
 </Layout>

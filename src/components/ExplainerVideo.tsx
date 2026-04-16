@@ -31,7 +31,7 @@ function ExplainerVideo() {
             <iframe
               className="w-full h-full"
               src="https://www.youtube.com/embed/Gi30UJGumuI"
-              title="Medicina Natural"
+              title="Medicina Integrativa"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
@@ -46,7 +46,7 @@ function ExplainerVideo() {
                 className="text-white text-lg font-semibold leading-snug"
                 style={{ fontFamily: 'Inter, sans-serif' }}
               >
-                O tratamento alivia dores, reduz ansiedade e melhora o sono de forma natural e segura.
+                O tratamento médico alivia dores, reduzendo ansiedade e melhorando o sono de forma natural e segura.
               </p>
             </div>
           </motion.div>

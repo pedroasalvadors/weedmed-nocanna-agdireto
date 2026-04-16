@@ -7,10 +7,10 @@ const videos = [
 
   { id: 'aTpYN2_N4-E', thumbnail: '/testimonial8.webp', specialist: 'Sandro zerou as crises de convulsão e melhorou a qualidade do sono com o tratamento.' },
   { id: 'ey90bGRljDw', thumbnail: '/testimonial9.webp', specialist: 'Paciente supera depressão e síndrome do pânico com suporte total na importação do tratamento.' },
-  { id: 'w7_VFg6unaA', thumbnail: '/testimonial6.webp', specialist: 'Paciente detalha o suporte humanizado e os primeiros resultados de sua jornada com o tratamento.' },
+  { id: 'w7_VFg6unaA', thumbnail: '/testimonial6.webp', specialist: 'Paciente detalha o suporte humanizado e os primeiros resultados de sua jornada de tratamento.' },
   { id: 'pU1x4a4r6KY', thumbnail: '/testimonial7.webp', specialist: 'Mãe conta como o tratamento trouxe tranquilidade e bons resultados para o TDH e TOD da filha.' },
-    { id: 'A1WLqWf4I0o', thumbnail: '/testimonial3.webp', specialist: 'Airo: jornada com medicina natural e a importância do suporte humanizado.' },
-          { id: 'J1b9w2OkTpM', thumbnail: '/testimonial1.webp', specialist: 'Jorge, 66 anos: sono restaurado e mais energia com o tratamento.' },
+    { id: 'A1WLqWf4I0o', thumbnail: '/testimonial3.webp', specialist: 'Airo: jornada de tratamento e a importância do suporte humanizado.' },
+          { id: 'J1b9w2OkTpM', thumbnail: '/testimonial1.webp', specialist: 'Jorge, 66 anos: sono restaurado e mais energia com tratamento médico.' },
 
     { id: 'tyZ3dicgDa4', thumbnail: '/testimonial4.webp', specialist: 'Paciente eliminou dores articulares e encontrou equilíbrio na perimenopausa.' },
       { id: 'qF07_9FWHjY', thumbnail: '/testimonial13.webp', specialist: 'Filha relata como o tratamento devolveu mobilidade e calma para a mãe com Parkinson e demência.' },
@@ -44,8 +44,6 @@ function VideoCard({ videoId, thumbnail, specialist }: { videoId: string; thumbn
       <img
         src={thumbnail}
         alt="Video thumbnail"
-        loading="lazy"
-        decoding="async"
         className="w-full h-full object-cover object-[center_20%] scale-110"
       />
       
@@ -95,13 +93,10 @@ function VideoTestimonials() {
     const container = scrollRef.current
     if (!container) return
 
-    // Start with "Paciente eliminou" and "Filha relata" centered (index 2 and 3)
+    // Start at the beginning of the second set for clean infinite scroll
     const cardWidth = 240 + 20 // w-60 (240px) + gap-5 (20px)
     const singleSetWidth = cardWidth * videos.length
-    const containerCenter = container.clientWidth / 2
-    // Center point between cards at index 2 and 3: card2_start + card_width + gap/2
-    const centerBetweenCards = singleSetWidth + (cardWidth * 2) + 240 + 10
-    container.scrollLeft = centerBetweenCards - containerCenter
+    container.scrollLeft = singleSetWidth
 
     const handleScroll = () => {
       if (isScrolling) return
@@ -128,9 +123,22 @@ function VideoTestimonials() {
   }, [isScrolling])
 
   return (
-    <section className="bg-white overflow-hidden relative">
-      {/* Spacer */}
-      <div className="pt-16 md:pt-20" />
+    <section id="depoimentos" className="bg-white overflow-hidden relative">
+      {/* Header */}
+      <div className="pt-16 md:pt-20 pb-10 px-6 sm:px-8 lg:px-12 max-w-6xl mx-auto">
+        <h2
+          className="text-3xl md:text-4xl font-bold mb-2"
+          style={{ fontFamily: "'Plus Jakarta Sans', 'Inter', system-ui, sans-serif", color: '#2D1B69' }}
+        >
+          Histórias reais de pacientes
+        </h2>
+        <p
+          className="text-gray-500 text-base"
+          style={{ fontFamily: "'Inter', system-ui, sans-serif" }}
+        >
+          Mais de 3.000 pessoas que transformaram sua saúde com tratamento médico especializado.
+        </p>
+      </div>
 
       {/* Carousel - infinite scroll */}
       <motion.div

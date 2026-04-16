@@ -1,111 +1,93 @@
 ---
 import Layout from '../layouts/Layout.astro'
-import HeaderStatic from '../components/HeaderStatic.astro'
+import Header from '../components/Header'
 import Footer from '../components/Footer'
 ---
 
-<Layout title="Política de Privacidade - Weedmed">
+<Layout title="Politica de Privacidade - Weedmed">
   <div class="min-h-screen bg-gray-50">
-    <HeaderStatic currentPath="/politica-de-privacidade" />
+    <Header client:load />
 
-    <main class="py-16 md:py-20">
-      <div class="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12">
-        <h1
-          class="text-3xl md:text-4xl lg:text-5xl text-gray-800 font-bold mb-8"
-          style="font-family: Inter, sans-serif;"
-        >
-          Política de Privacidade
-        </h1>
-        <div class="w-24 h-1 mb-10" style="background-color: #65DFA8;"></div>
+    <main class="max-w-4xl mx-auto px-6 py-16">
+      <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-8" style="font-family: Inter, sans-serif;">
+        Politica de privacidade
+      </h1>
 
-        <div class="prose prose-lg max-w-none text-gray-600 space-y-8">
-          <p>
-            O site WeedMed é de propriedade da empresa WMED SERVICOS LTDA, que é a controladora de seus dados pessoais. Nós adotamos esta Política de Privacidade, que determina como nós estamos processando as informações coletadas pelo site WeedMed e também explica por quais razões nós precisamos coletar dados pessoais sobre você. Portanto, você deve ler esta Política de Privacidade antes de usar o site WeedMed. Nós cuidamos dos seus dados pessoais e assumimos a responsabilidade de garantir a confidencialidade e segurança de suas informações pessoais.
-          </p>
+      <div class="prose prose-lg max-w-none text-gray-700 space-y-6" style="font-family: Inter, sans-serif;">
+        <p>
+          O site WeedMed e de propriedade da empresa WMED SERVICOS LTDA, que e a controladora de seus dados pessoais. Nos adotamos esta Politica de Privacidade, que determina como nos estamos processando as informacoes coletadas pelo site WeedMed e tambem explica por quais razoes nos precisamos coletar dados pessoais sobre voce. Portanto, voce deve ler esta Politica de Privacidade antes de usar o site WeedMed. Nos cuidamos dos seus dados pessoais e assumimos a responsabilidade de garantir a confidencialidade e seguranca de suas informacoes pessoais.
+        </p>
 
-          <section>
-            <h2 class="text-2xl font-bold text-gray-800 mb-4" style="font-family: Inter, sans-serif;">
-              Estas são as informações pessoais que coletamos:
-            </h2>
-            <p>
-              Quando você visita o site WeedMed, nós automaticamente coletamos certas informações sobre seu dispositivo, incluindo informações sobre seu navegador, endereço IP, fuso horário e alguns dos cookies instalados no seu dispositivo. Além disso, quando você navega pelo Site, nós coletamos informações sobre as páginas individuais ou produtos que você visualiza, sobre quais sites ou termos de busca que redirecionaram você para nosso Site, e sobre como você interage com o Site. Nós nos referimos a essas informações coletadas automaticamente como "Informações sobre o dispositivo". Além disso, nós podemos coletar dados pessoais que você fornecer (incluindo, mas não limitado a: Nome, Sobrenome, Endereço, informações de pagamento, etc) durante o processo de registro para poder cumprir o acordo.
-            </p>
-          </section>
+        <h2 class="text-2xl font-semibold text-gray-900 mt-10 mb-4">
+          Estes sao as informacoes pessoais que coletamos:
+        </h2>
+        <p>
+          Quando voce visita o site WeedMed, nos automaticamente coletamos certas informacoes sobre seu dispositivo, incluindo informacoes sobre seu navegador, endereco IP, fuso horario e alguns dos cookies instalados no seu dispositivo. Alem disso, quando voce navega pelo Site, nos coletamos informacoes sobre as paginas individuais ou produtos que voce visualiza, sobre quais sites ou termos de busca que redirecionaram voce para nosso Site, e sobre como voce interage com o Site. Nos nos referimos a essas informacoes coletadas automaticamente como "Informacoes sobre o dispositivo". Alem disso, nos podemos coletar dados pessoais que voce fornecer (incluindo, mas nao limitado a: Nome, Sobrenome, Endereco, informacoes de pagamento, etc) durante o processo de registro para poder cumprir o acordo.
+        </p>
 
-          <section>
-            <h2 class="text-2xl font-bold text-gray-800 mb-4" style="font-family: Inter, sans-serif;">
-              Por que fazemos o processamento dos seus dados?
-            </h2>
-            <p>
-              Nossa maior prioridade é a segurança dos dados pessoais dos usuários e, portanto, nós podemos processar apenas dados mínimos, apenas enquanto for absolutamente necessário para a manutenção do site. Informações coletadas automaticamente são usadas para identificar possíveis casos de abuso e estabelecer dados estatísticos sobre o uso do site. Esses dados estatísticos não são agregados de outras formas que permitam a identificação de usuários específicos do sistema.
-            </p>
-            <p>
-              Você pode visitar o site sem nos contar sobre quem você é ou relevar qualquer informação que possa ser usada por outra pessoa para identificar você individualmente. Se, apesar disso, você quiser utilizar algum dos recursos do site, ou quiser receber nossa newsletter, ou quiser conceder outros detalhes através do preenchimento e envio de formulários, você poderá fornecer dados pessoais para nós, como seu email, nome, sobrenome, cidade de residência, organização e número de telefone.
-            </p>
-            <p>
-              Você pode escolher não fornecer dados pessoais para nós, mas, dessa forma, talvez você não consiga usar alguns dos recursos do site. Por exemplo, você não vai conseguir receber nossa Newsletter ou entrar em contato conosco diretamente pelo nosso site. Usuários que não tenham certeza sobre quais informações pessoais são obrigatórias são convidados a entrarem em contato conosco pelo e-mail <a href="mailto:contato@weedmed.com.br" class="text-purple-600 hover:text-purple-800 underline">contato@weedmed.com.br</a>.
-            </p>
-          </section>
+        <h2 class="text-2xl font-semibold text-gray-900 mt-10 mb-4">
+          Por que fazemos o processamento dos seus dados?
+        </h2>
+        <p>
+          Nossa maior prioridade e a seguranca dos dados pessoais dos usuarios e, portanto, nos podemos processar apenas dados minimos, apenas enquanto for absolutamente necessario para a manutencao do site. Informacoes coletadas automaticamente sao usadas para identificar possiveis casos de abuso e estabelecer dados estatisticos sobre o uso do site. Esses dados estatisticos nao sao agregados de outras formas que permitam a identificacao de usuarios especificos do sistema.
+        </p>
+        <p>
+          Voce pode visitar o site sem nos contar sobre quem voce e ou relevar qualquer informacao que possa ser usada por outra pessoa para identificar voce individualmente. Se, apesar disso, voce quiser utilizar algum dos recursos do site, ou quiser receber nossa newsletter, ou quiser conceder outros detalhes atraves do preenchimento e envio de formularios, voce podera fornecer dados pessoais para nos, como seu email, nome, sobrenome, cidade de residencia, organizacao e numero de telefone.
+        </p>
+        <p>
+          Voce pode escolher nao fornecer dados pessoais para nos, mas, dessa forma, talvez voce nao consiga usar alguns dos recursos do site. Por exemplo, voce nao vai conseguir receber nossa Newsletter ou entrar em contato conosco diretamente pelo nosso site. Usuarios que nao tenham certeza sobre quais informacoes pessoais sao obrigatorias sao convidados a entrarem em contato conosco pelo e-mail <a href="mailto:contato@weedmed.com.br" class="text-[#523AC5] hover:underline">contato@weedmed.com.br</a>.
+        </p>
 
-          <section>
-            <h2 class="text-2xl font-bold text-gray-800 mb-4" style="font-family: Inter, sans-serif;">
-              Seus direitos:
-            </h2>
-            <p>Se você morar na Europa, estes são os direitos garantidos quanto aos seus dados pessoais:</p>
-            <ul class="list-disc list-inside space-y-2 mt-4">
-              <li>O direito de ser informado.</li>
-              <li>O direito ao acesso.</li>
-              <li>O direito à retificação.</li>
-              <li>O direito de deletar.</li>
-              <li>O direito de restringir o processamento.</li>
-              <li>O direito da portabilidade de dados.</li>
-              <li>O direito à objeção.</li>
-              <li>Direitos em relação a tomadas de decisão automáticas e à perfilagem.</li>
-            </ul>
-            <p class="mt-4">
-              Se você quiser exercitar esses direitos, por favor entre em contato conosco usando os dados de contato abaixo. Adicionalmente, se você mora na Europa, nós afirmamos que estamos processando suas informações com a finalidade de cumprir contratos que possamos ter firmado com você (por exemplo, se você fizer uma compra no nosso Site), ou para exercer os interesses legítimos da nossa empresa listados acima. Além disso, por favor saiba que suas informações podem ser transferidas para fora da Europa, incluindo para o Canadá e os Estados Unidos da América.
-            </p>
-          </section>
+        <h2 class="text-2xl font-semibold text-gray-900 mt-10 mb-4">
+          Seus direitos:
+        </h2>
+        <p>
+          Se voce morar na Europa, estes sao os direitos garantidos quanto aos seus dados pessoais:
+        </p>
+        <ul class="list-disc pl-6 space-y-2">
+          <li>O direito de ser informado.</li>
+          <li>O direito ao acesso.</li>
+          <li>O direito a retificacao.</li>
+          <li>O direito de deletar.</li>
+          <li>O direito de restringir o processamento.</li>
+          <li>O direito da portabilidade de dados.</li>
+          <li>O direito a objecao.</li>
+          <li>Direitos em relacao a tomadas de decisao automaticas e a perfilagem.</li>
+        </ul>
+        <p>
+          Se voce quiser exercitar esses direitos, por favor entre em contato conosco usando os dados de contato abaixo. Adicionalmente, se voce mora na Europa, nos afirmamos que estamos processando suas informacoes com a finalidade de cumprir contratos que possamos ter firmado com voce (por exemplo, se voce fizer uma compra no nosso Site), ou para exercer os interesses legitimos da nossa empresa listados acima. Alem disso, por favor saiba que suas informacoes podem ser transferidas para fora da Europa, incluindo para o Canada e os Estados Unidos da America.
+        </p>
 
-          <section>
-            <h2 class="text-2xl font-bold text-gray-800 mb-4" style="font-family: Inter, sans-serif;">
-              Links para outros sites:
-            </h2>
-            <p>
-              Nosso site pode conter links para outros sites que não são controlados por nós e/ou não são de nossa propriedade. Por favor, esteja ciente de que nós não somos responsáveis pelas políticas de privacidade de tais sites e organizações terceiras. Nós incentivamos você a estar ciente de quando sair do nosso site, e também incentivamos você a ler a política de privacidade de cada um dos sites que podem coletar suas informações pessoais.
-            </p>
-          </section>
+        <h2 class="text-2xl font-semibold text-gray-900 mt-10 mb-4">
+          Links para outros sites:
+        </h2>
+        <p>
+          Nosso site pode conter links para outros sites que nao sao controlados por nos e/ou nao sao de nossa propriedade. Por favor, esteja ciente de que nos nao somos responsaveis pelas politicas de privacidade de tais sites e organizacoes terceiras. Nos incentivamos voce a estar ciente de quando sair do nosso site, e tambem incentivamos voce a ler a politica de privacidade de cada um dos sites que podem coletar suas informacoes pessoais.
+        </p>
 
-          <section>
-            <h2 class="text-2xl font-bold text-gray-800 mb-4" style="font-family: Inter, sans-serif;">
-              Segurança das informações:
-            </h2>
-            <p>
-              Nós garantimos que as informações que você fornece estão em servidores e computadores armazenados em ambientes seguros e controlados, protegidos de acessos, usos e divulgações não-autorizadas. Nós mantemos medidas de segurança administrativas, técnicas e físicas razoáveis, com finalidade de proteger os dados pessoais sob nossa custódia de acessos, usos, modificações e divulgações não-autorizadas. Apesar disso, nenhuma transmissão de dados pela Internet ou por sistemas sem fio pode ser garantida.
-            </p>
-          </section>
+        <h2 class="text-2xl font-semibold text-gray-900 mt-10 mb-4">
+          Seguranca das informacoes:
+        </h2>
+        <p>
+          Nos garantimos que as informacoes que voce fornece estao em servidores e computadores armazenados em ambientes seguros e controlados, protegidos de acessos, usos e divulgacoes nao-autorizadas. Nos mantemos medidas de seguranca administrativas, tecnicas e fisicas razoaveis, com finalidade de proteger os dados pessoais sob nossa custodia de acessos, usos, modificacoes e divulgacoes nao-autorizadas. Apesar disso, nenhuma transmissao de dados pela Internet ou por sistemas sem fio pode ser garantida.
+        </p>
 
-          <section>
-            <h2 class="text-2xl font-bold text-gray-800 mb-4" style="font-family: Inter, sans-serif;">
-              Declaração legal:
-            </h2>
-            <p>
-              Nós vamos divulgar qualquer informação que coletarmos, usarmos ou recebermos caso tal divulgação seja solicitada ou permitida por lei, de forma a cumprir intimações ou processos judiciais similares, e também quando considerarmos em boa fé que a divulgação é necessária para a proteção de nossos direitos, para a proteção da segurança de outros, para investigações de fraude ou para responder a uma solicitação do governo.
-            </p>
-          </section>
+        <h2 class="text-2xl font-semibold text-gray-900 mt-10 mb-4">
+          Declaracao legal:
+        </h2>
+        <p>
+          Nos vamos divulgar qualquer informacao que coletarmos, usarmos ou recebermos caso tal divulgacao seja solicitada ou permitida por lei, de forma a cumprir intimacoes ou processos judiciais similares, e tambem quando considerarmos em boa fe que a divulgacao e necessaria para a protecao de nossos direitos, para a protecao da seguranca de outros, para investigacoes de fraude ou para responder a uma solicitacao do governo.
+        </p>
 
-          <section>
-            <h2 class="text-2xl font-bold text-gray-800 mb-4" style="font-family: Inter, sans-serif;">
-              Informações de contato:
-            </h2>
-            <p>
-              Se você quiser entrar em contato conosco para saber mais sobre esta Política de Privacidade, ou quiser acessar quaisquer informações relativas aos seus direitos individuais e às suas Informações Pessoais, você poderá enviar um e-mail para o endereço <a href="mailto:suporte@weedmed.com.br" class="text-purple-600 hover:text-purple-800 underline">suporte@weedmed.com.br</a>.
-            </p>
-          </section>
-        </div>
+        <h2 class="text-2xl font-semibold text-gray-900 mt-10 mb-4">
+          Informacoes de contato:
+        </h2>
+        <p>
+          Se voce quiser entrar em contato conosco para saber mais sobre esta Politica de Privacidade, ou quiser acessar quaisquer informacoes relativas aos seus direitos individuais e as suas Informacoes Pessoais, voce podera enviar um e-mail para o endereco <a href="mailto:suporte@weedmed.com.br" class="text-[#523AC5] hover:underline">suporte@weedmed.com.br</a>.
+        </p>
       </div>
     </main>
 
-    <Footer />
+    <Footer client:idle />
   </div>
 </Layout>
