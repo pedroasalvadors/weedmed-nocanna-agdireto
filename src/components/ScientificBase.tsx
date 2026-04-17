@@ -29,7 +29,7 @@ const cardVariants = {
 
 export default function ScientificBase() {
   return (
-    <section className="py-16 md:py-24" style={{ backgroundColor: '#F9F8FF' }}>
+    <section className="py-16 md:py-24" style={{ backgroundColor: '#EDE9FE' }}>
       <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
 
         {/* Header */}

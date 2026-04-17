@@ -20,7 +20,7 @@ export default function TrustBar() {
   }, [])
 
   return (
-    <section className="py-6 md:py-8 border-b border-gray-100" style={{ backgroundColor: '#F9F8FF' }}>
+    <section className="py-6 md:py-8 border-b border-gray-100" style={{ backgroundColor: '#EDE9FE' }}>
       <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
 
         {/* Mobile: auto-sliding single stat */}
