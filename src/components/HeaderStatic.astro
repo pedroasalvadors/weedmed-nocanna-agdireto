@@ -9,15 +9,15 @@ const { currentPath = '/' } = Astro.props
 <header class="w-full">
   <!-- Promotional Banner -->
   <div class="py-2 text-center px-4" style="background-color: #00B383;">
-    <button
-      type="button"
-      class="open-chat text-xs sm:text-sm font-semibold text-white hover:underline"
+    <a
+      href="https://weedmed.online/avaliacao"
+      class="text-xs sm:text-sm font-semibold text-white hover:underline"
       style="font-family: 'Inter', system-ui, sans-serif;"
       data-cta="banner"
     >
       <span class="sm:hidden">Consulta médica online · R$50 →</span>
       <span class="hidden sm:inline">Consulta médica online a partir de R$50 · Resultado em até 24h →</span>
-    </button>
+    </a>
   </div>
 
   <!-- Navigation Bar -->
@@ -63,22 +63,22 @@ const { currentPath = '/' } = Astro.props
 
         <!-- Right Side Actions -->
         <div class="flex items-center gap-3">
-          <button
-            type="button"
-            class="open-chat hidden lg:inline-flex items-center justify-center px-5 py-2.5 text-sm font-medium text-[#2D1B69] border border-[#2D1B69] rounded-full hover:bg-[#EDE9F8] transition-all duration-200"
+          <a
+            href="https://weedmed.online/cadastro?redirect=/paciente/upload-receita"
+            class="hidden lg:inline-flex items-center justify-center px-5 py-2.5 text-sm font-medium text-[#2D1B69] border border-[#2D1B69] rounded-full hover:bg-[#EDE9F8] transition-all duration-200"
             style="font-family: 'Inter', system-ui, sans-serif;"
             data-cta="header_receita"
           >
             Já tenho receita
-          </button>
-          <button
-            type="button"
-            class="open-chat hidden lg:inline-flex items-center justify-center px-6 py-2.5 text-sm font-semibold text-white rounded-full shadow-md hover:shadow-lg hover:opacity-90 transition-all duration-200 header-cta"
+          </a>
+          <a
+            href="https://weedmed.online/avaliacao"
+            class="hidden lg:inline-flex items-center justify-center px-6 py-2.5 text-sm font-semibold text-white rounded-full shadow-md hover:shadow-lg hover:opacity-90 transition-all duration-200 header-cta"
             style="font-family: 'Inter', system-ui, sans-serif;"
             data-cta="header_desktop"
           >
             Iniciar tratamento
-          </button>
+          </a>
 
           <!-- Mobile Menu Button -->
           <button
@@ -101,20 +101,20 @@ const { currentPath = '/' } = Astro.props
         <a href="/#depoimentos" class="text-sm font-medium text-gray-600 hover:text-[#2D1B69] transition-colors py-1">Depoimentos</a>
         <a href="/#precos" class="text-sm font-medium text-gray-600 hover:text-[#2D1B69] transition-colors py-1">Preços</a>
         <div class="pt-2 flex flex-col gap-2">
-          <button
-            type="button"
-            class="open-chat inline-flex items-center justify-center px-6 py-3 text-sm font-medium text-[#2D1B69] border border-[#2D1B69] rounded-full transition-all duration-200"
+          <a
+            href="https://weedmed.online/cadastro?redirect=/paciente/upload-receita"
+            class="inline-flex items-center justify-center px-6 py-3 text-sm font-medium text-[#2D1B69] border border-[#2D1B69] rounded-full transition-all duration-200"
             data-cta="header_receita_mobile"
           >
             Já tenho receita
-          </button>
-          <button
-            type="button"
-            class="open-chat inline-flex items-center justify-center px-6 py-3 text-sm font-semibold text-white rounded-full shadow-md header-cta"
+          </a>
+          <a
+            href="https://weedmed.online/avaliacao"
+            class="inline-flex items-center justify-center px-6 py-3 text-sm font-semibold text-white rounded-full shadow-md header-cta"
             data-cta="header_mobile"
           >
             Iniciar tratamento
-          </button>
+          </a>
         </div>
       </div>
     </div>
@@ -145,16 +145,15 @@ const { currentPath = '/' } = Astro.props
     });
   }
 
-  document.querySelectorAll('[data-cta]').forEach(el => {
-    el.addEventListener('click', () => {
+  document.querySelectorAll('a[data-cta]').forEach(link => {
+    link.addEventListener('click', () => {
       window.dataLayer = window.dataLayer || [];
       window.dataLayer.push({
         event: 'cta_click',
-        cta_location: el.getAttribute('data-cta'),
+        cta_location: link.getAttribute('data-cta'),
       });
     });
   });
-
 
   document.querySelectorAll('a[href^="/#"]').forEach(anchor => {
     anchor.addEventListener('click', (e) => {
