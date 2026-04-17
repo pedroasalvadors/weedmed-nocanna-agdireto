@@ -29,7 +29,7 @@ const cardVariants = {
 
 export default function ScientificBase() {
   return (
-    <section className="py-16 md:py-24" style={{ backgroundColor: '#F9F8FF' }}>
+    <section className="py-16 md:py-24" style={{ backgroundColor: '#F0ECFF' }}>
       <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
 
         {/* Header */}
@@ -110,8 +110,7 @@ export default function ScientificBase() {
           >
             Quer saber mais sobre a ciência?{' '}
             <button
-              onClick={() => document.querySelector<HTMLElement>('.open-chat')?.click()}
-              className="underline hover:text-[#2D1B69] transition-colors font-medium"
+              className="open-chat underline hover:text-[#2D1B69] transition-colors font-medium"
             >
               Fale com nosso time →
             </button>

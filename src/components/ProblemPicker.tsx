@@ -195,8 +195,7 @@ export default function ProblemPicker() {
           >
             Tem dúvida se é para você?{' '}
             <button
-              onClick={() => document.querySelector<HTMLElement>('.open-chat')?.click()}
-              className="underline hover:text-[#2D1B69] transition-colors font-medium"
+              className="open-chat underline hover:text-[#2D1B69] transition-colors font-medium"
             >
               Converse com nossa equipe →
             </button>

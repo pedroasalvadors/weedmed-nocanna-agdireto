@@ -100,7 +100,7 @@ function Doctors() {
   }
 
   return (
-    <section id="especialistas" className="py-16 md:py-20 overflow-x-hidden" style={{ backgroundColor: '#F9F8FF' }}>
+    <section id="especialistas" className="py-16 md:py-20 overflow-x-hidden" style={{ backgroundColor: '#F0ECFF' }}>
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
 

@@ -190,8 +190,7 @@ export default function Steps() {
               Fale <strong className="text-gray-700 font-semibold">gratuitamente</strong> com um consultor especialista pelo WhatsApp. Em minutos ele entende sua situação e te orienta sobre o melhor caminho.
             </p>
             <button
-              onClick={() => document.querySelector<HTMLElement>('.open-chat')?.click()}
-              className="inline-flex items-center gap-1 text-sm font-semibold hover:opacity-75 transition-opacity text-left"
+              className="open-chat inline-flex items-center gap-1 text-sm font-semibold hover:opacity-75 transition-opacity text-left"
               style={{ color: '#00B383', fontFamily: "'Inter', system-ui, sans-serif" }}
               data-cta="steps_whatsapp"
             >
