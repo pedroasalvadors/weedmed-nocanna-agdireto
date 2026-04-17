@@ -142,8 +142,7 @@ export default function FAQ() {
             Ainda tem dúvidas?
           </p>
           <button
-            onClick={() => document.querySelector<HTMLElement>('.open-chat')?.click()}
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-semibold text-white transition-opacity hover:opacity-90"
+            className="open-chat inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-semibold text-white transition-opacity hover:opacity-90"
             style={{ backgroundColor: '#2D1B69', fontFamily: "'Inter', system-ui, sans-serif" }}
             data-cta="faq_consultor"
           >

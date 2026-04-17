@@ -148,8 +148,7 @@ export default function Pricing() {
               </ul>
 
               <button
-                onClick={() => document.querySelector<HTMLElement>('.open-chat')?.click()}
-                className={`inline-flex items-center justify-center px-5 py-3 rounded-full text-sm font-semibold transition-opacity hover:opacity-90 ${
+                className={`open-chat inline-flex items-center justify-center px-5 py-3 rounded-full text-sm font-semibold transition-opacity hover:opacity-90 ${
                   plan.highlight
                     ? 'text-white'
                     : 'text-white'

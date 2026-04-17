@@ -74,10 +74,10 @@ function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.4 }}
           >
-            <a
-              href="https://weedmed.online/avaliacao"
+            <button
+              type="button"
               data-cta="hero"
-              className="inline-flex items-center justify-center px-8 py-4 sm:px-10 sm:py-5 text-lg sm:text-xl font-semibold text-white rounded-full transition-all duration-300 ease-out hover:scale-105"
+              className="open-chat inline-flex items-center justify-center px-8 py-4 sm:px-10 sm:py-5 text-lg sm:text-xl font-semibold text-white rounded-full transition-all duration-300 ease-out hover:scale-105"
               style={{
                 background: 'linear-gradient(135deg, #4ade80 0%, #22c55e 50%, #16a34a 100%)',
                 boxShadow: '0 10px 30px rgba(34, 197, 94, 0.4)',
@@ -90,7 +90,7 @@ function Hero() {
               }}
             >
               Iniciar tratamento
-            </a>
+            </button>
           </motion.div>
         </div>
       </div>

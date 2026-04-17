@@ -195,8 +195,7 @@ export default function ProblemPicker() {
           >
             Tem dúvida se é para você?{' '}
             <button
-              onClick={() => document.querySelector<HTMLElement>('.open-chat')?.click()}
-              className="underline hover:text-[#2D1B69] transition-colors font-medium"
+              className="open-chat underline hover:text-[#2D1B69] transition-colors font-medium"
             >
               Converse com nossa equipe →
             </button>
@@ -271,8 +270,8 @@ export default function ProblemPicker() {
               </p>
 
               {/* CTA */}
-              <a
-                href="https://weedmed.online/avaliacao"
+              <button
+                type="button"
                 onClick={() => {
                   (window as any).dataLayer = (window as any).dataLayer || []
                   ;(window as any).dataLayer.push({
@@ -281,11 +280,11 @@ export default function ProblemPicker() {
                     cta_label: active.label,
                   })
                 }}
-                className="inline-flex items-center justify-center w-full px-5 py-3.5 rounded-full text-sm font-semibold text-white transition-opacity hover:opacity-90"
+                className="open-chat inline-flex items-center justify-center w-full px-5 py-3.5 rounded-full text-sm font-semibold text-white transition-opacity hover:opacity-90"
                 style={{ backgroundColor: '#00B383', fontFamily: "'Inter', system-ui, sans-serif" }}
               >
                 Iniciar tratamento →
-              </a>
+              </button>
             </motion.div>
           </motion.div>
         )}

@@ -110,8 +110,7 @@ export default function ScientificBase() {
           >
             Quer saber mais sobre a ciência?{' '}
             <button
-              onClick={() => document.querySelector<HTMLElement>('.open-chat')?.click()}
-              className="underline hover:text-[#2D1B69] transition-colors font-medium"
+              className="open-chat underline hover:text-[#2D1B69] transition-colors font-medium"
             >
               Fale com nosso time →
             </button>

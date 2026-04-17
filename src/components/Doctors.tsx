@@ -146,20 +146,20 @@ function Doctors() {
               ))}
             </div>
 
-            <a
-              href="https://weedmed.online/avaliacao"
+            <button
+              type="button"
               onClick={() => {
                 (window as any).dataLayer = (window as any).dataLayer || [];
                 (window as any).dataLayer.push({ event: 'cta_click', cta_location: 'doctors' });
               }}
-              className="inline-flex items-center gap-2 px-8 py-3 text-base font-semibold text-white rounded-full shadow-md hover:shadow-lg hover:opacity-90 transition-all duration-200"
+              className="open-chat inline-flex items-center gap-2 px-8 py-3 text-base font-semibold text-white rounded-full shadow-md hover:shadow-lg hover:opacity-90 transition-all duration-200"
               style={{ backgroundColor: '#00B383' }}
             >
               Iniciar tratamento
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
-            </a>
+            </button>
           </motion.div>
 
           {/* Right — Carousel */}

@@ -90,14 +90,14 @@ export default function Steps() {
             >
               Envie sua receita e nosso sistema identifica o produto certo. <strong className="text-gray-700 font-semibold">Direto para o checkout, sem burocracia.</strong>
             </p>
-            <a
-              href="https://weedmed.online/cadastro?redirect=/paciente/upload-receita"
-              className="inline-flex items-center gap-1 text-sm font-semibold hover:opacity-75 transition-opacity"
+            <button
+              type="button"
+              className="open-chat inline-flex items-center gap-1 text-sm font-semibold hover:opacity-75 transition-opacity text-left"
               style={{ color: '#2D1B69', fontFamily: "'Inter', system-ui, sans-serif" }}
               data-cta="steps_receita"
             >
               Enviar minha receita →
-            </a>
+            </button>
           </motion.div>
 
           {/* Card 2 — Quero consulta (DESTAQUE) */}
@@ -144,22 +144,22 @@ export default function Steps() {
               style={{ fontFamily: "'Inter', system-ui, sans-serif" }}
             >
               Prefere ao vivo?{' '}
-              <a
-                href="https://weedmed.online/paciente/agendar"
-                className="underline hover:text-white/70 transition-colors"
+              <button
+                type="button"
+                className="open-chat underline hover:text-white/70 transition-colors"
               >
                 Consulta por vídeo a partir de R$100
-              </a>
+              </button>
               .
             </p>
-            <a
-              href="https://weedmed.online/avaliacao"
-              className="inline-flex items-center justify-center px-5 py-3 rounded-full text-sm font-semibold text-white transition-opacity hover:opacity-90"
+            <button
+              type="button"
+              className="open-chat inline-flex items-center justify-center px-5 py-3 rounded-full text-sm font-semibold text-white transition-opacity hover:opacity-90"
               style={{ backgroundColor: '#00B383', fontFamily: "'Inter', system-ui, sans-serif" }}
               data-cta="steps_consulta"
             >
               Começar por R$50 →
-            </a>
+            </button>
           </motion.div>
 
           {/* Card 3 — Tirar dúvidas */}
